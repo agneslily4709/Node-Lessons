@@ -1,0 +1,25 @@
+
+GET  http://localhost:5000/api/subscribers
+
+###
+GET  http://localhost:5000/api/subscribers/653fbc5be5d73e9892b9a7a8
+
+###
+POST http://localhost:5000/api/newSubscriber 
+Content-Type: application/json
+
+{
+        "name":"Kyle",
+        "subscribedTo":"Nicholas Renotte"
+}
+
+###
+PATCH http://localhost:5000/api/updateSubscriber/653fc2e4edc31d6eb342183d 
+Content-Type: application/json
+
+{
+        "name":"Lily"
+}
+
+###
+DELETE http://localhost:5000/api/deleteSubscriber/653fbc5be5d73e9892b9a7a8 
